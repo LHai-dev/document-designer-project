@@ -1,0 +1,14 @@
+server:
+    port: 9091
+spring:
+    profiles:
+        active: '[dev]'
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: http://localhost:8180/realms/AuthorizationCodeflowwithKeycloak
+url:
+    expressjs:
+        restfull:
+            api: "http://localhost:3000/pdfs"
