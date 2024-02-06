@@ -28,7 +28,9 @@ services:
       KC_HEALTH_ENABLED: true
     depends_on:
       - keycloak-db
-    #volumes:
+    volumes:
+        - ./themes/demo:/opt/keycloak/themes/demo
+        #volumes:
     #  - /home/keycloak/automobile-realm.json:/opt/keycloak/data/import/automobile-realm.json
   # Database Service (Postgres) for Keycloak
 
